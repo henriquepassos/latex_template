@@ -1,0 +1,55 @@
+\documentclass{custom-beamer}
+
+\title{Title}
+\subtitle{Subtitle}
+\author{Autor}
+\institute{Institute}
+\date{\the\year}
+
+\begin{document}
+
+\begin{frame}[fragile]
+\titlepage
+\end{frame}
+
+\section{Sumário}
+
+\begin{frame}[fragile]
+\tableofcontents
+\end{frame}
+
+\section{Section}
+
+\begin{frame}[fragile]
+\begin{block}{Block 1}
+\begin{itemize}
+	\item Item 1 \cite{vapnik2000nature}
+\end{itemize}
+\end{block}
+\begin{block}{Block 2}
+\begin{itemize}
+	\item Item 1
+	\item Item 2
+	\item Item 3
+\end{itemize}
+\end{block}
+\begin{block}{Block 3}
+\begin{itemize}
+	\item Item 1
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{Dúvidas}
+
+\begin{frame}[fragile]
+\questionspage
+\end{frame}
+
+\section{Referências}
+
+\begin{frame}[fragile]
+\bibliography{bibliografia.bib}
+\end{frame}
+
+\end{document}
