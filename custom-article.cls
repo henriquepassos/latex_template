@@ -103,7 +103,7 @@
 {\LARGE \thetitle \par} \vskip 3em
 {\large \theauthor \par} \vskip 3em
 {\large \thedate \par} \vfill
-\includegraphics[scale=0.12]{logo-each} \par
+\includegraphics[scale=0.18]{logo-each} \par
 {\large Escola de Artes Ciências e Humanidades\\Universidade de São Paulo \par}
 \end{center}
 
