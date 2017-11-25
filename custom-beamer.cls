@@ -4,21 +4,24 @@
 
 \LoadClass[10pt,a4paper,compress]{beamer}%\LoadClass[10pt,a4paper,compress,aspectratio=169]{beamer}
 
-\RequirePackage{lmodern}
-\RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
 \RequirePackage[brazil]{babel}
 
 \RequirePackage{hyperref}
-\RequirePackage[alf,abnt-emphasize=bf]{abntex2cite}
+%\RequirePackage[alf,abnt-emphasize=bf]{abntex2cite}
 
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{amsthm}
 
+\RequirePackage{color}
+\RequirePackage{xcolor}
+
 \RequirePackage{tikz}
 \RequirePackage{pgfplots}
 
+\RequirePackage{colortbl}
 \RequirePackage{multirow}
 
 \RequirePackage{listings}
@@ -30,8 +33,8 @@
 
 
 
-\pgfplotsset{compat=1.10}
-\citebrackets[]
+%\pgfplotsset{compat=1.10}
+%\citebrackets[]
 \lstset{
 	numbers=left,                                               % where to put the line-numbers
 	numberstyle=\small \ttfamily \color[rgb]{0.4,0.4,0.4},      % style used for the linenumbers
@@ -59,9 +62,11 @@
 \addtobeamertemplate{frametitle}{\let\insertframesubtitle\insertsubsectionhead}{}
 
 \makeatletter
-        \CheckCommand*\beamer@checkframetitle{\@ifnextchar\bgroup\beamer@inlineframetitle{}}
-        \renewcommand*\beamer@checkframetitle{\global\let\beamer@frametitle\relax\@ifnextchar\bgroup\beamer@inlineframetitle{}}
+    \CheckCommand*\beamer@checkframetitle{\@ifnextchar\bgroup\beamer@inlineframetitle{}}
+    \renewcommand*\beamer@checkframetitle{\global\let\beamer@frametitle\relax\@ifnextchar\bgroup\beamer@inlineframetitle{}}
 \makeatother
+
+\newcommand*\oldmacro{}\let\oldmacro\insertshorttitle\renewcommand*\insertshorttitle{\oldmacro\hfill\insertframenumber\,/\,\inserttotalframenumber}
 
 \newcommand{\questionspage}{%
 \begin{figure}[!htbp] \centering%
@@ -70,3 +75,5 @@
 \end{tikzpicture}%
 \end{figure}
 }
+
+\newcommand{\spaceremove}{\vspace{-1.5em}}

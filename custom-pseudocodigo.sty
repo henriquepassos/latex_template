@@ -1,0 +1,36 @@
+%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{custom-pseudocodigo}[2014/11/23 custom-pseudocodigo package]
+
+\algrenewcommand\algorithmicend{\textbf{fim}}
+\algrenewcommand\algorithmicdo{\textbf{faça}}
+\algrenewcommand\algorithmicwhile{\textbf{enquanto}}
+\algrenewcommand\algorithmicfor{\textbf{para}}
+\algrenewcommand\algorithmicforall{\textbf{para todo}}
+\algrenewcommand\algorithmicloop{\textbf{laço}}
+\algrenewcommand\algorithmicrepeat{\textbf{repete}}
+\algrenewcommand\algorithmicuntil{\textbf{até}}
+\algrenewcommand\algorithmicprocedure{\textbf{procedimento}}
+\algrenewcommand\algorithmicfunction{\textbf{função}}
+\algrenewcommand\algorithmicif{\textbf{se}}
+\algrenewcommand\algorithmicthen{\textbf{então}}
+\algrenewcommand\algorithmicelse{\textbf{senão}}
+\algrenewcommand\algorithmicrequire{\textbf{Requerer:}}
+\algrenewcommand\algorithmicensure{\textbf{Assegurar:}}
+\algrenewcommand\algorithmicreturn{\textbf{devolve}}
+
+\algrenewtext{EndWhile}{\algorithmicend\ \algorithmicwhile}
+\algrenewtext{EndFor}{\algorithmicend\ \algorithmicfor}
+\algrenewtext{EndLoop}{\algorithmicend\ \algorithmicloop}
+\algrenewtext{EndIf}{\algorithmicend\ \algorithmicif}
+\algrenewtext{EndProcedure}{\algorithmicend\ \algorithmicprocedure}
+\algrenewtext{EndFunction}{\algorithmicend\ \algorithmicfunction}
+
+\algnewcommand\algorithmicto{\textbf{até}}
+\algrenewtext{For}[3]{\algorithmicfor\ #1 $\gets$ #2 \algorithmicto\ #3 \algorithmicdo}
+
+\algnewcommand\algorithmicforallf{\textbf{para toda}}
+\algdef{SE}[DOWHILE]{DoWhile}{DoWhileEnd}{\algorithmicdo}[1]{\algorithmicwhile\ #1}
+\algdef{S}[FOR]{ForAllf}[1]{\algorithmicforallf\ #1\ \algorithmicdo}
+
+\newcommand{\mei}{\leqslant}

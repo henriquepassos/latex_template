@@ -4,9 +4,8 @@
 
 \LoadClass[12pt,a4paper]{article}
 
-\RequirePackage{lmodern}
-\RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
 \RequirePackage[brazil]{babel}
 
 \RequirePackage{hyperref}
@@ -16,9 +15,13 @@
 \RequirePackage{amssymb}
 \RequirePackage{amsthm}
 
+\RequirePackage{color}
+\RequirePackage{xcolor}
+
 \RequirePackage{tikz}
 \RequirePackage{pgfplots}
 
+\RequirePackage{colortbl}
 \RequirePackage{multirow}
 
 \RequirePackage{listings}
@@ -30,7 +33,7 @@
 
 \RequirePackage[left=1.6cm,right=1.6cm,top=1.8cm,bottom=4.0cm,marginparwidth=3.4cm]{geometry}
 
-\pgfplotsset{compat=1.10}
+%\pgfplotsset{compat=1.10}
 \citebrackets[]
 \lstset{
 	numbers=left,                                               % where to put the line-numbers
@@ -100,7 +103,7 @@
 {\LARGE \thetitle \par} \vskip 3em
 {\large \theauthor \par} \vskip 3em
 {\large \thedate \par} \vfill
-\includegraphics[scale=0.12]{logo-each.png} \par
+\includegraphics[scale=0.12]{logo-each} \par
 {\large Escola de Artes Ciências e Humanidades\\Universidade de São Paulo \par}
 \end{center}
 
