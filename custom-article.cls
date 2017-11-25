@@ -28,6 +28,7 @@
 
 \RequirePackage{algorithm}
 \RequirePackage{algpseudocode}
+\RequirePackage{custom-pseudocodigo}
 
 \RequirePackage[portuguese]{nomencl}%\makenomenclature
 
