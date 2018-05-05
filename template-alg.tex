@@ -1,0 +1,48 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{custom-pseudocodigo}
+
+\begin{document}
+
+\begin{algorithm}[!htbp] \centering
+\caption{Descrição do DE}
+\begin{algorithmic}[1]
+\ForAll{agente}
+    \State inicializar agente
+\EndFor
+\DoWhile
+    \ForAllf{agente}
+        \State $ v_{i, G + 1} = x_{r_{1}, G} + F \times (x_{r_{2, G}} - x_{r_{3, G}}) $
+    \Comment mutação
+        \State $
+\begin{aligned}
+u_{ji, G + 1} & =
+\begin{cases}
+    v_{ji, G + 1} & \text{if } (U(0, 1) \leq CR) \text{ or } j = U(1, D) \\
+    x_{ji, G}     & \text{caso contrário}
+\end{cases}, \\
+j & = 1, 2, \dots, D
+\end{aligned}
+$
+    \Comment recombinação
+    \EndFor
+    \If{o desempenho de $ u_{i, G + 1} $ for maior do que $ x_{ji, G} $}
+        \State substituir $ u_{i, G + 1} $ por $ x_{ji, G} $
+    \EndIf
+\DoWhileEnd{não atingir o máximo de iterações ou o critério de erro mínimo}
+\end{algorithmic}
+\label{alg:de}
+%\source{Henrique Passos, 2018}
+\end{algorithm}
+
+\end{document}

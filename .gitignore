@@ -1,9 +1,16 @@
 *.aux
 *.bak
 *.bbl
+*.bcf
+*.beam
 *.bib.bak
 *.blg
+*-blx.bib
 *.brf
+.classpath
+*.cmake
+CMakeCache.txt
+CMakeFiles/
 *.dvi
 .idea/
 *.idx
@@ -13,6 +20,7 @@
 *.loa
 *.lof
 *.log
+*.loq
 *.lot
 *.m~
 *.nav
@@ -21,9 +29,12 @@ nbproject/
 octave-workspace
 *.out
 *.pdf
+.project
 *.ps
 *.pyc
+*.run.xml
 *.snm
+*.spl
 *.swp
 *.synctex.gz
 *.synctex.gz(busy)
@@ -31,3 +42,4 @@ target/
 *.tex.swo
 *.toc
 *.vrb
+!**/fig_ficha_catalografica.pdf
