@@ -17,6 +17,7 @@ CMakeFiles/
 *.ilg
 *.iml
 *.ind
+.ipynb_checkpoints/
 *.loa
 *.lof
 *.log
